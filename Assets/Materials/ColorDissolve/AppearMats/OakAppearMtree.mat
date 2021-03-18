@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: OakAppearMtree
+  m_Shader: {fileID: -6465566751694194690, guid: f6d3a66b891bc3f42b276f1a88a73b21,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_15D681D3:
+        m_Texture: {fileID: 2800000, guid: 85461048edf2fe649bcf45c1dd371d35, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_2D945637:
+        m_Texture: {fileID: 2800000, guid: 85461048edf2fe649bcf45c1dd371d35, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_CD55A00B:
+        m_Texture: {fileID: 2800000, guid: e2e0c43ab2e54464cb7259dd0351425c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - DisappearFadeStep: 1
+    - EdgeThickness: 0.03
+    - NoiseSize: 22
+    - Vector1_460EBE55: 1
+    - Vector1_46ADDBB3: -0.29
+    - Vector1_6B857960: 0
+    - Vector1_9025FF10: 2
+    - Vector1_B62D11D2: 1
+    - Vector1_D9BD2CCA: 0.1
+    - Vector1_E7793C07: 0
+    - Vector1_FAFC7824: 0
+    m_Colors:
+    - Color_23868439: {r: 0.8113208, g: 0.6084906, b: 0.6084906, a: 0}
+    - Color_88831F57: {r: 2, g: 2, b: 2, a: 0}
+    - Color_88AB939: {r: 1, g: 0.9281041, b: 0.8726415, a: 0}
+    - Color_D13CFD7C: {r: 1, g: 1, b: 1, a: 0}
+    - TextureColor: {r: 0.52963686, g: 0.52963686, b: 0.52963686, a: 0}
+    - Vector2_69BD214E: {r: 2, g: 2, b: 0, a: 0}
+    - Vector2_D3EF7A96: {r: 0.5, g: 0.5, b: 0, a: 0}
