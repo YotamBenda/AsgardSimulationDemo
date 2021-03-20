@@ -2,28 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Used on any script that wants to fire/initiate an event.
+/// Using the FireEvent(eventName) function, eventNames taken from the GameEventSubscriber class (Enums names).
+/// </summary>
 [CreateAssetMenu(menuName = "Events/Game Event", order = 2)]
 public class GameEvent : ScriptableObject
 {
     public List<GameEventSubscriber> subscribers = new List<GameEventSubscriber>();
 
-    public void InvokeEvent()
+    public void FireEvent(string eventName)
     {
-        for(int index = 0; index < subscribers.Count; index++)
+        for (int i = 0; i < subscribers.Count; ++i)
         {
-            subscribers[index].onEventTrigger();
+            subscribers[i].OnEventFired(eventName);
         }
-    }
-
-    public static GameEvent operator+(GameEvent gameEvent, GameEventSubscriber subscriber)
-    {
-        gameEvent.subscribers.Add(subscriber);
-        return gameEvent;
-    }
-
-    public static GameEvent operator-(GameEvent gameEvent, GameEventSubscriber subscriber)
-    {
-        gameEvent.subscribers.Remove(subscriber);
-        return gameEvent;
     }
 }

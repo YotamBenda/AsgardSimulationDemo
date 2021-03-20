@@ -19,7 +19,7 @@ public class Enemy : Actor
             Debug.LogError("Enemy preferredWeapon must be defined");
         }
 
-        Transform player  = GameplayManager.Instance.player.transform;
+        Transform player  = GameplayManager.Instance.Player.transform;
         GameObject weapon = Instantiate(preferredWeapon, weaponSpawnPoint.position, Quaternion.identity);
 
         float shootingAngle = 30f;

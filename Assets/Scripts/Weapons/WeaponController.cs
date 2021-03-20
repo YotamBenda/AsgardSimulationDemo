@@ -5,16 +5,7 @@ public class WeaponController : MonoBehaviour
 {
     public LayerMask damageable;
 
-    protected bool isGrabbed = false;
     protected Transform origin;
-
-    protected bool IsPlayersTurn
-    {
-        get
-        {
-            return GameplayManager.Instance.CurrentActorTurn == ActorType.Player;
-        }
-    }
 
     private void Start()
     {
@@ -54,18 +45,6 @@ public class WeaponController : MonoBehaviour
             Destroy(graphics, 2f);
         }
 
-        /*
-        if (staticData.shouldWeaponResurect)
-        {
-            //iTween.RotateTo(stage.gameObject, iTween.Hash("rotation", new Vector3(0, currRotation + angels, 0), "time", timeForTurning, "eastype", iTween.EaseType.easeInOutSine));
-
-            //iTween.MoveBy(gameObject, iTween.Hash("x", 2, "easeType", "easeInOutExpo", "loopType", "pingPong", "delay", .1));
-
-            CustomDebugConsole.Log("move weapon to origin", gameObject.name);
-            transform.position = origin.transform.position;
-        }
-        else 
-        */
         if (staticData.shouldWeaponDestructOnHit)
         {
             Destroy(gameObject);

@@ -3,23 +3,34 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
+/// <summary>
+/// GameEventSubscriber is used on any GameObject that wants to be subscried to the main Game Event system.
+/// All events are exposed to the inspector, assigning through it which function to activate for each event fired.
+/// Firing events from GameEvent class, using the Enums names in this class.
+/// </summary>
 public class GameEventSubscriber : MonoBehaviour
 {
-    [SerializeField] GameEvent gameEvent;
-    [SerializeField] UnityEvent unityEvent;
+    public UnityEvent OnGameStarted;
+    public UnityEvent OnGameEnded;
+    public UnityEvent OnEnemyKilled;
 
-    public void onEventTrigger()
+    public void OnEventFired(string eventName)
     {
-        unityEvent?.Invoke();
+        StartCoroutine(eventName);
     }
-
-    private void OnEnable() 
+    public IEnumerator GameStart()
     {
-        gameEvent += this;
+        OnGameStarted?.Invoke();
+        yield return null;
     }
-
-    private void OnDisable() 
+    public IEnumerator GameEnded()
     {
-        gameEvent -= this;
+        OnGameEnded?.Invoke();
+        yield return null;
+    }
+    public IEnumerator EnemyKilled()
+    {
+        OnEnemyKilled?.Invoke();
+        yield return null;
     }
 }

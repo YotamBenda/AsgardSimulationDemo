@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class EventTimer : MonoBehaviour
+public class EventTimer : GenericSingleton<EventTimer>
 {
     public UnityEvent TriggeredEvent;
     public bool IsRunning
