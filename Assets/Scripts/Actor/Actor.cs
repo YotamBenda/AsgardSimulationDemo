@@ -19,9 +19,15 @@ public class Actor : MonoBehaviour, ICombat
 
     string ICombat.UniqueID => GetInstanceID().ToString();
 
-    [HideInInspector]
-    public bool IsActorTurn { get; protected set; } = false;
-
+    private void Start()
+    {
+        currentHealth = staticData.health;
+        SetCurrentHealthText();
+        if(animator != null)
+        {
+            ActorUtils.TriggerIdleAnimation(animator);
+        }
+    }
     private void SetCurrentHealthText()
     {
         if (healthText != null)
@@ -36,18 +42,10 @@ public class Actor : MonoBehaviour, ICombat
             }
         }
     }
-    private void Start()
-    {
-        currentHealth = staticData.health;
-        SetCurrentHealthText();
-        //GameplayManager.Instance.OnActorSpawned(this);
-
-        ActorUtils.TriggerIdleAnimation(animator);
-    }
  
     public virtual void Attack()
     {
-        ActorUtils.Play(staticData.attackAudio);
+        //ActorUtils.Play(staticData.attackAudio);
     }
 
     public virtual void TakeDamage(float amount, WeaponSO.DamageType damageType)
@@ -64,10 +62,10 @@ public class Actor : MonoBehaviour, ICombat
         {
             Die();
         }
-        else
+        else // using ActorUtils to "take a hit"
         {
-            ActorUtils.Play(staticData.takeDamageAudio);
-            ActorUtils.TriggerTakeDamageAnimation(animator);
+            //ActorUtils.Play(staticData.takeDamageAudio);
+            //ActorUtils.TriggerTakeDamageAnimation(animator);
 
             ActorUtils.Log(gameObject, "TakeDamage [" + amount + "]");
         }
@@ -76,12 +74,10 @@ public class Actor : MonoBehaviour, ICombat
     public virtual void Die()
     {
         isDead = true;
-        ActorUtils.Play(staticData.dieAudio);
-        ActorUtils.TriggerDieAnimation(animator);
+        //ActorUtils.Play(staticData.dieAudio);
+        //ActorUtils.TriggerDieAnimation(animator);
 
-        ActorUtils.Log(gameObject, "Died");
-
-        // TODO: wait until animation is finished
         GameplayManager.Instance.OnActorDied(this);
+        Destroy(this.gameObject);
     }
 }

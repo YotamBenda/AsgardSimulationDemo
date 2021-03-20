@@ -3,7 +3,7 @@
 [CreateAssetMenu(fileName = "Weapon", menuName = "Weapon Common Attributes/Weapon")]
 public class WeaponSO : ScriptableObject
 {
-    public enum WeaponUsage { SingleHand,  TwoHands, Throwable };
+    public enum WeaponUsage { SingleHand,  TwoHands, Throwable , Vehicle};
     public enum DamageType { Direct, Radius, Spray };
 
     [Header("Menu Display")]

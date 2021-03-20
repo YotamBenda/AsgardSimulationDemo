@@ -18,7 +18,7 @@ public class GameplayManager :  GenericSingleton<GameplayManager>
 
     public void OnActorDied(Actor actor)
     {
-        
+        Score++;
     }
 
     private void LoseGame()

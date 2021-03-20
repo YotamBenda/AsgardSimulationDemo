@@ -15,7 +15,6 @@ public class ActorSO : ScriptableObject
     [Header("Misc")]
     public ActorType actorType;
     [Tooltip("Does this actor play?")]
-    public bool canTakeTurn = true; 
     [Range(1, 5)]
     public int level = 1;
 
@@ -26,6 +25,6 @@ public class ActorSO : ScriptableObject
     public float health;
 
     [Header("Effects")]
-    public AudioSource idleAudio, attackAudio, takeDamageAudio, dieAudio, pickupWeaponAudio; // TODO: should there be one AS for all?
+    public AudioSource idleAudio, attackAudio, takeDamageAudio, dieAudio, pickupWeaponAudio; 
     
 }

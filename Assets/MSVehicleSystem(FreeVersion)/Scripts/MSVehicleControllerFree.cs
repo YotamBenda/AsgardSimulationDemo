@@ -6,6 +6,9 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// <param name="enableSkidMarksOnStart"> bool to enable skidmarks. was manually changed to false on awake </param>
+/// </summary>
 #region wheelClass
 [Serializable]
 public class WheelClassFree {
@@ -480,7 +483,7 @@ public class MSVehicleControllerFree : MonoBehaviour {
 	MSSceneControllerFree controls;
 
 	void Awake(){
-		enableSkidMarksOnStart = true;
+		enableSkidMarksOnStart = false;
 		DebugStartErrors ();
 		SetCameras ();
 	}
