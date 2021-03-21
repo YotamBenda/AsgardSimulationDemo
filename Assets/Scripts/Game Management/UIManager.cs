@@ -26,7 +26,8 @@ public class UIManager : MonoBehaviour
 
     private void Update()
     {
-        timerText.text = timerData.Timer.ToString("F0");
+        SetTimer();
+        //timerText.text = timerData.Timer.ToString("00:00");
     }
 
     public void EndGame()
@@ -56,5 +57,13 @@ public class UIManager : MonoBehaviour
     public void SetScore()
     {
         scoreText.text = GameplayManager.Instance.Score.ToString();
+    }
+
+    private void SetTimer()
+    {
+        var timer = timerData.Timer;
+        var minutes = Mathf.Floor(timer / 60);
+        var seconds = Mathf.Floor(timer % 60);
+        timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
 }

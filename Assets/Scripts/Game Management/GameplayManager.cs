@@ -26,13 +26,18 @@ public class GameplayManager :  GenericSingleton<GameplayManager>
 
     private void Start()
     {
-        eventTimer.TimeEvent(timerDataSO.TimeForGame, MatchEnded);
+        OnMatchStarted();
     }
 
     public void OnActorDied(Actor actor)
     {
         Score++;
         gameEvent.FireEvent("EnemyKilled");
+    }
+
+    public void OnMatchStarted()
+    {
+        eventTimer.TimeEvent(timerDataSO.TimeForGame, MatchEnded);
     }
 
     public void OnMatchEnded()
