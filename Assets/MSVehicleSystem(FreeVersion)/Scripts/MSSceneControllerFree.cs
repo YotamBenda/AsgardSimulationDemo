@@ -482,11 +482,13 @@ public class MSSceneControllerFree : MonoBehaviour {
         if (!inDrone)
         {
 			NextVehicle();
+			inDrone = true;
         }
         else
         {
 			PreviousVehicle();
-        }
+			inDrone = false;
+		}
     }
 
 	IEnumerator WaitToInteract(){

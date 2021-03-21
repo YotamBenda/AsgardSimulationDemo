@@ -1023,6 +1023,7 @@ public class MSVehicleControllerFree : MonoBehaviour {
 	public void EnterInVehicle(){
 		isInsideTheCar = true;
 		EnableCameras (indexCamera);
+		handBrakeTrue = false;
 	}
 
 	public void ExitTheVehicle(){
