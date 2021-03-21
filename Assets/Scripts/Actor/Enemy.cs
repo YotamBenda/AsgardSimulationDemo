@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Enemy : Actor
 {
-    
     public override void Attack()
     {
         base.Attack();
