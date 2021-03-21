@@ -2623,6 +2623,16 @@ PrefabInstance:
       propertyPath: vehicles.Array.data[29]
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 114377021978642006, guid: b6883ab16065ce74589a2e2f0874e149,
+        type: 3}
+      propertyPath: controls.enable_enterEndExit_Input
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114377021978642006, guid: b6883ab16065ce74589a2e2f0874e149,
+        type: 3}
+      propertyPath: controls.enable_startTheVehicle_Input
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 224157275730706908, guid: b6883ab16065ce74589a2e2f0874e149,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -4958,7 +4968,7 @@ GameObject:
   - component: {fileID: 1806981747}
   - component: {fileID: 1806981746}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: BG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5032,7 +5042,7 @@ GameObject:
   - component: {fileID: 1813362204}
   - component: {fileID: 1813362203}
   m_Layer: 0
-  m_Name: Restart (1)
+  m_Name: SwitchCameras
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5089,7 +5099,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Restart Game: R'
+  m_Text: 'Switch Cameras: C'
 --- !u!222 &1813362204
 CanvasRenderer:
   m_ObjectHideFlags: 0
