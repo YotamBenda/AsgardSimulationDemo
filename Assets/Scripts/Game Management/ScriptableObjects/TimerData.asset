@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 003bb915bbe9b06429422bd18ec72bf9, type: 3}
   m_Name: TimerData
   m_EditorClassIdentifier: 
-  TimeForGame: 3
-  Timer: 0
+  TimeForGame: 120
+  Timer: 1.8769373
