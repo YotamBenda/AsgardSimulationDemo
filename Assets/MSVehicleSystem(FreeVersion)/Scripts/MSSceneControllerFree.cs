@@ -554,4 +554,13 @@ public class MSSceneControllerFree : MonoBehaviour {
 			enterAndExitBool = true;
 		}
 	}
+
+	public void PauseMatch()
+    {
+		pause = true;
+    }
+	public void UnPauseMatch()
+	{
+		pause = false;
+	}
 }

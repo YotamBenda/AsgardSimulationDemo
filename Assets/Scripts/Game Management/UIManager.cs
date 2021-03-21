@@ -44,8 +44,8 @@ public class UIManager : MonoBehaviour
     public void EndGame()
     {
         scoreTextEnding.text = scoreText.text;
+        matchOverlay.SetActive(false);
         matchEndMenu.SetActive(true);
-        Debug.Log("Game ended go to sleep");
     }
 
     public void RestartGame()
