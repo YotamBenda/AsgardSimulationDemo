@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class GameplayManager :  GenericSingleton<GameplayManager>
 {
@@ -40,8 +41,15 @@ public class GameplayManager :  GenericSingleton<GameplayManager>
         eventTimer.TimeEvent(timerDataSO.TimeForGame, MatchEnded);
     }
 
-    public void OnMatchEnded()
+    public void OnMatchEnded() // being called from EventTimer
     {
         gameEvent.FireEvent("MatchEnded");
+    }
+
+    public void OnMatchRestarted()
+    {
+        OnMatchStarted();
+        Score = 0;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

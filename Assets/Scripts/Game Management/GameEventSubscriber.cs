@@ -14,22 +14,32 @@ public class GameEventSubscriber : MonoBehaviour
 
     public UnityEvent OnMatchStarted;
     public UnityEvent OnMatchEnded;
+    public UnityEvent OnMatchRestarted;
     public UnityEvent OnEnemyKilled;
 
     public void OnEventFired(string eventName)
     {
         StartCoroutine(eventName);
     }
+
     public IEnumerator MatchStart()
     {
         OnMatchStarted?.Invoke();
         yield return null;
     }
+
     public IEnumerator MatchEnded()
     {
         OnMatchEnded?.Invoke();
         yield return null;
     }
+
+    public IEnumerator MatchRestarted()
+    {
+        OnMatchRestarted?.Invoke();
+        yield return null;
+    }
+
     public IEnumerator EnemyKilled()
     {
         OnEnemyKilled?.Invoke();

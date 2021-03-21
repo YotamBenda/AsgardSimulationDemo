@@ -13,10 +13,13 @@ public class UIManager : MonoBehaviour
     [SerializeField] private TimerDataSO timerData;
 
     [Header("UI Menus and Attributes")]
-    [SerializeField] private GameObject gameEndMenu;
-    [SerializeField] private GameObject gamePauseMenu;
+    [SerializeField] private GameObject matchEndMenu;
+    [SerializeField] private GameObject matchPauseMenu;
+    [SerializeField] private GameObject matchOverlay;
+    [SerializeField] private GameObject controlsMenu;
     [SerializeField] private Text timerText;
     [SerializeField] private Text scoreText;
+    [SerializeField] private Text scoreTextEnding;
 
 
     private void Start()
@@ -27,30 +30,40 @@ public class UIManager : MonoBehaviour
     private void Update()
     {
         SetTimer();
-        //timerText.text = timerData.Timer.ToString("00:00");
+
+        if (Input.GetKey(KeyCode.Tab))
+        {
+            controlsMenu.SetActive(true);
+        }
+        else
+        {
+            controlsMenu.SetActive(false);
+        }
     }
 
     public void EndGame()
     {
-        //gameEndMenu.SetActive(true);
+        scoreTextEnding.text = scoreText.text;
+        matchEndMenu.SetActive(true);
         Debug.Log("Game ended go to sleep");
     }
 
     public void RestartGame()
     {
-        gameEndMenu.SetActive(false);
+        matchEndMenu.SetActive(false);
+        matchOverlay.SetActive(true);
         gameEvent.FireEvent("GameStarted");
     }
 
     public void PauseGame()
     {
-        gamePauseMenu.SetActive(true);
+        matchPauseMenu.SetActive(true);
         gameEvent.FireEvent("PauseGame");
     }
 
     public void ContinueGame()
     {
-        gamePauseMenu.SetActive(false);
+        matchPauseMenu.SetActive(false);
         gameEvent.FireEvent("ContinueGame");
     }
 

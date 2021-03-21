@@ -76,6 +76,7 @@ public class MSSceneControllerFree : MonoBehaviour {
 	public float minDistance = 3;
 	[Space(10)][Tooltip("If this variable is true, useful data will appear on the screen, such as the car's current gear, speed, brakes, among other things.")]
 	public bool UIVisualizer = true;
+	public GameEvent gameEvent;
 
 	JoystickFree joystickCamera;
 	Button cameraMobileButton;
@@ -296,7 +297,8 @@ public class MSSceneControllerFree : MonoBehaviour {
 			EnableOrDisableButtons (vehicleCode.isInsideTheCar);
 
 			if (Input.GetKeyDown (controls.reloadScene) && controls.enable_reloadScene_Input) {
-				SceneManager.LoadScene (sceneName);
+				gameEvent.FireEvent("MatchRestarted");
+
 			}
 
 			if (Input.GetKeyDown (controls.pause) && controls.enable_pause_Input) {
