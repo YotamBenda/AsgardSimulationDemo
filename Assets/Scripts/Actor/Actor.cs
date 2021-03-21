@@ -12,7 +12,7 @@ public class Actor : MonoBehaviour, ICombat
     [Tooltip("Weapon prefab")]
     public GameObject preferredWeapon; // until we define how an enemy picks up a weapon
     public Text healthText;
-
+    public AudioSource audioSource;
 
     public bool isDead { get; protected set; } = false;
     protected float currentHealth;
@@ -74,7 +74,7 @@ public class Actor : MonoBehaviour, ICombat
     public virtual void Die()
     {
         isDead = true;
-        //ActorUtils.Play(staticData.dieAudio);
+        ActorUtils.Play(audioSource);
         //ActorUtils.TriggerDieAnimation(animator);
 
         GameplayManager.Instance.OnActorDied(this);

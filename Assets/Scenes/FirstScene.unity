@@ -133,6 +133,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Smoking (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5213006972696866227, guid: 7b56eca94e1b20c45956122ff6bfc6b7,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 2092718162}
     - target: {fileID: 5751918359617322142, guid: 7b56eca94e1b20c45956122ff6bfc6b7,
         type: 3}
       propertyPath: m_RootOrder
@@ -322,6 +327,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   preferredWeapon: {fileID: 0}
   healthText: {fileID: 0}
+  audioSource: {fileID: 2092718162}
 --- !u!65 &14138649
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -511,6 +517,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   preferredWeapon: {fileID: 0}
   healthText: {fileID: 0}
+  audioSource: {fileID: 2092718162}
 --- !u!65 &18243019
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -557,6 +564,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Smoking (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5213006972696866227, guid: 7b56eca94e1b20c45956122ff6bfc6b7,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 2092718162}
     - target: {fileID: 5751918359617322142, guid: 7b56eca94e1b20c45956122ff6bfc6b7,
         type: 3}
       propertyPath: m_RootOrder
@@ -712,6 +724,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   preferredWeapon: {fileID: 0}
   healthText: {fileID: 0}
+  audioSource: {fileID: 2092718162}
 --- !u!65 &33135093
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -792,6 +805,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1025170660095147797, guid: 9405a3e15e147ff44860bb95b6b635ef,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 2092718162}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9405a3e15e147ff44860bb95b6b635ef, type: 3}
 --- !u!4 &37703751 stripped
@@ -910,6 +928,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   preferredWeapon: {fileID: 0}
   healthText: {fileID: 0}
+  audioSource: {fileID: 2092718162}
 --- !u!65 &72338714
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1073,6 +1092,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Smoking (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5213006972696866227, guid: 7b56eca94e1b20c45956122ff6bfc6b7,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 2092718162}
     - target: {fileID: 5751918359617322142, guid: 7b56eca94e1b20c45956122ff6bfc6b7,
         type: 3}
       propertyPath: m_RootOrder
@@ -1228,6 +1252,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   preferredWeapon: {fileID: 0}
   healthText: {fileID: 0}
+  audioSource: {fileID: 2092718162}
 --- !u!65 &97889431
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1308,6 +1333,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1025170660095147797, guid: 9405a3e15e147ff44860bb95b6b635ef,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 2092718162}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9405a3e15e147ff44860bb95b6b635ef, type: 3}
 --- !u!1 &111336206
@@ -1563,6 +1593,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   preferredWeapon: {fileID: 0}
   healthText: {fileID: 0}
+  audioSource: {fileID: 2092718162}
 --- !u!65 &236825222
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2174,6 +2205,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   preferredWeapon: {fileID: 0}
   healthText: {fileID: 0}
+  audioSource: {fileID: 2092718162}
 --- !u!65 &365925268
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2205,6 +2237,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Smoking (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 5213006972696866227, guid: 7b56eca94e1b20c45956122ff6bfc6b7,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 2092718162}
     - target: {fileID: 5751918359617322142, guid: 7b56eca94e1b20c45956122ff6bfc6b7,
         type: 3}
       propertyPath: m_RootOrder
@@ -2291,6 +2328,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   preferredWeapon: {fileID: 0}
   healthText: {fileID: 0}
+  audioSource: {fileID: 2092718162}
 --- !u!65 &386545668
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2465,6 +2503,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   preferredWeapon: {fileID: 0}
   healthText: {fileID: 0}
+  audioSource: {fileID: 2092718162}
 --- !u!65 &402568603
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2681,6 +2720,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   preferredWeapon: {fileID: 0}
   healthText: {fileID: 0}
+  audioSource: {fileID: 2092718162}
 --- !u!65 &436686240
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2727,6 +2767,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Smoking (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 5213006972696866227, guid: 7b56eca94e1b20c45956122ff6bfc6b7,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 2092718162}
     - target: {fileID: 5751918359617322142, guid: 7b56eca94e1b20c45956122ff6bfc6b7,
         type: 3}
       propertyPath: m_RootOrder
@@ -2796,6 +2841,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Smoking (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5213006972696866227, guid: 7b56eca94e1b20c45956122ff6bfc6b7,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 2092718162}
     - target: {fileID: 5751918359617322142, guid: 7b56eca94e1b20c45956122ff6bfc6b7,
         type: 3}
       propertyPath: m_RootOrder
@@ -2968,6 +3018,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Smoking (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 5213006972696866227, guid: 7b56eca94e1b20c45956122ff6bfc6b7,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 2092718162}
     - target: {fileID: 5751918359617322142, guid: 7b56eca94e1b20c45956122ff6bfc6b7,
         type: 3}
       propertyPath: m_RootOrder
@@ -3123,6 +3178,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   preferredWeapon: {fileID: 0}
   healthText: {fileID: 0}
+  audioSource: {fileID: 2092718162}
 --- !u!65 &497147998
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3516,6 +3572,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   preferredWeapon: {fileID: 0}
   healthText: {fileID: 0}
+  audioSource: {fileID: 2092718162}
 --- !u!65 &616071742
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3627,6 +3684,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   preferredWeapon: {fileID: 0}
   healthText: {fileID: 0}
+  audioSource: {fileID: 2092718162}
 --- !u!65 &617713439
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3707,6 +3765,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1025170660095147797, guid: 9405a3e15e147ff44860bb95b6b635ef,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 2092718162}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9405a3e15e147ff44860bb95b6b635ef, type: 3}
 --- !u!1001 &630403033
@@ -3790,6 +3853,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Smoking (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5213006972696866227, guid: 7b56eca94e1b20c45956122ff6bfc6b7,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 2092718162}
     - target: {fileID: 5751918359617322142, guid: 7b56eca94e1b20c45956122ff6bfc6b7,
         type: 3}
       propertyPath: m_RootOrder
@@ -3952,6 +4020,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Smoking
       objectReference: {fileID: 0}
+    - target: {fileID: 5213006972696866227, guid: 7b56eca94e1b20c45956122ff6bfc6b7,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 2092718162}
     - target: {fileID: 5751918359617322142, guid: 7b56eca94e1b20c45956122ff6bfc6b7,
         type: 3}
       propertyPath: m_RootOrder
@@ -4027,6 +4100,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Smoking (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5213006972696866227, guid: 7b56eca94e1b20c45956122ff6bfc6b7,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 2092718162}
     - target: {fileID: 5751918359617322142, guid: 7b56eca94e1b20c45956122ff6bfc6b7,
         type: 3}
       propertyPath: m_RootOrder
@@ -4176,6 +4254,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   preferredWeapon: {fileID: 0}
   healthText: {fileID: 0}
+  audioSource: {fileID: 2092718162}
 --- !u!65 &712616653
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4224,6 +4303,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   preferredWeapon: {fileID: 0}
   healthText: {fileID: 0}
+  audioSource: {fileID: 2092718162}
 --- !u!65 &717474941
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4249,6 +4329,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Smoking (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 5213006972696866227, guid: 7b56eca94e1b20c45956122ff6bfc6b7,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 2092718162}
     - target: {fileID: 5751918359617322142, guid: 7b56eca94e1b20c45956122ff6bfc6b7,
         type: 3}
       propertyPath: m_RootOrder
@@ -4479,6 +4564,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   preferredWeapon: {fileID: 0}
   healthText: {fileID: 0}
+  audioSource: {fileID: 2092718162}
 --- !u!65 &736639085
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5002,6 +5088,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   preferredWeapon: {fileID: 0}
   healthText: {fileID: 0}
+  audioSource: {fileID: 0}
 --- !u!114 &826160451
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5351,6 +5438,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   preferredWeapon: {fileID: 0}
   healthText: {fileID: 0}
+  audioSource: {fileID: 2092718162}
 --- !u!65 &852267625
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5544,6 +5632,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   preferredWeapon: {fileID: 0}
   healthText: {fileID: 0}
+  audioSource: {fileID: 2092718162}
 --- !u!65 &933755518
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5586,6 +5675,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   preferredWeapon: {fileID: 0}
   healthText: {fileID: 0}
+  audioSource: {fileID: 2092718162}
 --- !u!65 &942177575
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5767,6 +5857,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   preferredWeapon: {fileID: 0}
   healthText: {fileID: 0}
+  audioSource: {fileID: 2092718162}
 --- !u!65 &966515877
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5847,6 +5938,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1025170660095147797, guid: 9405a3e15e147ff44860bb95b6b635ef,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 2092718162}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9405a3e15e147ff44860bb95b6b635ef, type: 3}
 --- !u!1001 &990244746
@@ -6108,6 +6204,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Smoking (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 5213006972696866227, guid: 7b56eca94e1b20c45956122ff6bfc6b7,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 2092718162}
     - target: {fileID: 5751918359617322142, guid: 7b56eca94e1b20c45956122ff6bfc6b7,
         type: 3}
       propertyPath: m_RootOrder
@@ -6269,6 +6370,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   preferredWeapon: {fileID: 0}
   healthText: {fileID: 0}
+  audioSource: {fileID: 2092718162}
 --- !u!65 &1092681538
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6662,6 +6764,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   preferredWeapon: {fileID: 0}
   healthText: {fileID: 0}
+  audioSource: {fileID: 2092718162}
 --- !u!65 &1152707969
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6851,6 +6954,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   preferredWeapon: {fileID: 0}
   healthText: {fileID: 0}
+  audioSource: {fileID: 2092718162}
 --- !u!65 &1171740327
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7119,6 +7223,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   preferredWeapon: {fileID: 0}
   healthText: {fileID: 0}
+  audioSource: {fileID: 2092718162}
 --- !u!65 &1219144607
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7476,6 +7581,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   preferredWeapon: {fileID: 0}
   healthText: {fileID: 0}
+  audioSource: {fileID: 2092718162}
 --- !u!65 &1303448240
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7574,6 +7680,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1025170660095147797, guid: 9405a3e15e147ff44860bb95b6b635ef,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 2092718162}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9405a3e15e147ff44860bb95b6b635ef, type: 3}
 --- !u!1001 &1344294000
@@ -7674,6 +7785,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   preferredWeapon: {fileID: 0}
   healthText: {fileID: 0}
+  audioSource: {fileID: 2092718162}
 --- !u!65 &1344294004
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7785,6 +7897,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   preferredWeapon: {fileID: 0}
   healthText: {fileID: 0}
+  audioSource: {fileID: 2092718162}
 --- !u!65 &1365608958
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7972,6 +8085,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   preferredWeapon: {fileID: 0}
   healthText: {fileID: 0}
+  audioSource: {fileID: 2092718162}
 --- !u!65 &1403199304
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8098,6 +8212,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   preferredWeapon: {fileID: 0}
   healthText: {fileID: 0}
+  audioSource: {fileID: 2092718162}
 --- !u!65 &1426331410
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8146,6 +8261,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   preferredWeapon: {fileID: 0}
   healthText: {fileID: 0}
+  audioSource: {fileID: 2092718162}
 --- !u!65 &1429416721
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8802,6 +8918,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   preferredWeapon: {fileID: 0}
   healthText: {fileID: 0}
+  audioSource: {fileID: 2092718162}
 --- !u!65 &1516870959
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9049,6 +9166,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   preferredWeapon: {fileID: 0}
   healthText: {fileID: 0}
+  audioSource: {fileID: 2092718162}
 --- !u!65 &1557809559
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9466,6 +9584,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   preferredWeapon: {fileID: 0}
   healthText: {fileID: 0}
+  audioSource: {fileID: 2092718162}
 --- !u!65 &1636061419
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9664,6 +9783,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   preferredWeapon: {fileID: 0}
   healthText: {fileID: 0}
+  audioSource: {fileID: 2092718162}
 --- !u!65 &1673540929
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9787,6 +9907,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   preferredWeapon: {fileID: 0}
   healthText: {fileID: 0}
+  audioSource: {fileID: 2092718162}
 --- !u!65 &1683488407
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9956,6 +10077,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1025170660095147797, guid: 9405a3e15e147ff44860bb95b6b635ef,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 2092718162}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9405a3e15e147ff44860bb95b6b635ef, type: 3}
 --- !u!1001 &1725217663
@@ -10056,6 +10182,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   preferredWeapon: {fileID: 0}
   healthText: {fileID: 0}
+  audioSource: {fileID: 2092718162}
 --- !u!65 &1725217667
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10185,6 +10312,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1025170660095147797, guid: 9405a3e15e147ff44860bb95b6b635ef,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 2092718162}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9405a3e15e147ff44860bb95b6b635ef, type: 3}
 --- !u!1 &1758937427
@@ -10253,6 +10385,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   preferredWeapon: {fileID: 0}
   healthText: {fileID: 0}
+  audioSource: {fileID: 2092718162}
 --- !u!65 &1765114192
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10376,6 +10509,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   preferredWeapon: {fileID: 0}
   healthText: {fileID: 0}
+  audioSource: {fileID: 2092718162}
 --- !u!65 &1785397147
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10556,6 +10690,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   preferredWeapon: {fileID: 0}
   healthText: {fileID: 0}
+  audioSource: {fileID: 2092718162}
 --- !u!65 &1804485410
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10756,6 +10891,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   preferredWeapon: {fileID: 0}
   healthText: {fileID: 0}
+  audioSource: {fileID: 2092718162}
 --- !u!65 &1813806505
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10850,6 +10986,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Smoking (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 5213006972696866227, guid: 7b56eca94e1b20c45956122ff6bfc6b7,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 2092718162}
     - target: {fileID: 5751918359617322142, guid: 7b56eca94e1b20c45956122ff6bfc6b7,
         type: 3}
       propertyPath: m_RootOrder
@@ -10936,6 +11077,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   preferredWeapon: {fileID: 0}
   healthText: {fileID: 0}
+  audioSource: {fileID: 2092718162}
 --- !u!65 &1835395165
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10961,6 +11103,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Smoking (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 5213006972696866227, guid: 7b56eca94e1b20c45956122ff6bfc6b7,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 2092718162}
     - target: {fileID: 5751918359617322142, guid: 7b56eca94e1b20c45956122ff6bfc6b7,
         type: 3}
       propertyPath: m_RootOrder
@@ -11116,6 +11263,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   preferredWeapon: {fileID: 0}
   healthText: {fileID: 0}
+  audioSource: {fileID: 2092718162}
 --- !u!65 &1846972484
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11227,6 +11375,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   preferredWeapon: {fileID: 0}
   healthText: {fileID: 0}
+  audioSource: {fileID: 2092718162}
 --- !u!65 &1852056823
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11416,6 +11565,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   preferredWeapon: {fileID: 0}
   healthText: {fileID: 0}
+  audioSource: {fileID: 2092718162}
 --- !u!65 &1881431181
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11441,6 +11591,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Smoking (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 5213006972696866227, guid: 7b56eca94e1b20c45956122ff6bfc6b7,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 2092718162}
     - target: {fileID: 5751918359617322142, guid: 7b56eca94e1b20c45956122ff6bfc6b7,
         type: 3}
       propertyPath: m_RootOrder
@@ -11527,6 +11682,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   preferredWeapon: {fileID: 0}
   healthText: {fileID: 0}
+  audioSource: {fileID: 2092718162}
 --- !u!65 &1886295695
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11638,6 +11794,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   preferredWeapon: {fileID: 0}
   healthText: {fileID: 0}
+  audioSource: {fileID: 2092718162}
 --- !u!65 &1888520306
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12137,6 +12294,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   preferredWeapon: {fileID: 0}
   healthText: {fileID: 0}
+  audioSource: {fileID: 2092718162}
 --- !u!65 &1953230566
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12197,6 +12355,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   preferredWeapon: {fileID: 0}
   healthText: {fileID: 0}
+  audioSource: {fileID: 2092718162}
 --- !u!65 &1966334515
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12277,6 +12436,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1025170660095147797, guid: 9405a3e15e147ff44860bb95b6b635ef,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 2092718162}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9405a3e15e147ff44860bb95b6b635ef, type: 3}
 --- !u!1001 &1976921135
@@ -12360,6 +12524,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Smoking (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 5213006972696866227, guid: 7b56eca94e1b20c45956122ff6bfc6b7,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 2092718162}
     - target: {fileID: 5751918359617322142, guid: 7b56eca94e1b20c45956122ff6bfc6b7,
         type: 3}
       propertyPath: m_RootOrder
@@ -12452,6 +12621,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   preferredWeapon: {fileID: 0}
   healthText: {fileID: 0}
+  audioSource: {fileID: 2092718162}
 --- !u!65 &1992221526
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12845,6 +13015,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   preferredWeapon: {fileID: 0}
   healthText: {fileID: 0}
+  audioSource: {fileID: 2092718162}
 --- !u!65 &2050585622
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13017,6 +13188,133 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9815e831497e124ba34a807df21ca21, type: 3}
+--- !u!1 &2092718161
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2092718163}
+  - component: {fileID: 2092718162}
+  m_Layer: 0
+  m_Name: AudioSource
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &2092718162
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2092718161}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 1c2510b6fba64394487e862079cd72af, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &2092718163
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2092718161}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -34.433594, y: 136.01231, z: 203.1036}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2130710643
 GameObject:
   m_ObjectHideFlags: 0
@@ -13221,6 +13519,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   preferredWeapon: {fileID: 0}
   healthText: {fileID: 0}
+  audioSource: {fileID: 2092718162}
 --- !u!65 &2142251051
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13313,6 +13612,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1025170660095147797, guid: 9405a3e15e147ff44860bb95b6b635ef,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 2092718162}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9405a3e15e147ff44860bb95b6b635ef, type: 3}
 --- !u!1001 &5213006973370329955
@@ -13327,6 +13631,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Smoking
       objectReference: {fileID: 0}
+    - target: {fileID: 5213006972696866227, guid: 7b56eca94e1b20c45956122ff6bfc6b7,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 2092718162}
     - target: {fileID: 5751918359617322142, guid: 7b56eca94e1b20c45956122ff6bfc6b7,
         type: 3}
       propertyPath: m_RootOrder

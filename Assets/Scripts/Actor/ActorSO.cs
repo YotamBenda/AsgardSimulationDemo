@@ -25,6 +25,6 @@ public class ActorSO : ScriptableObject
     public float health;
 
     [Header("Effects")]
-    public AudioSource idleAudio, attackAudio, takeDamageAudio, dieAudio, pickupWeaponAudio; 
+    public AudioClip idleAudio, attackAudio, takeDamageAudio, dieAudio, pickupWeaponAudio; 
     
 }

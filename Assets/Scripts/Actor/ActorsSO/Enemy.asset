@@ -22,5 +22,5 @@ MonoBehaviour:
   idleAudio: {fileID: 0}
   attackAudio: {fileID: 0}
   takeDamageAudio: {fileID: 0}
-  dieAudio: {fileID: 0}
+  dieAudio: {fileID: 8300000, guid: 1c2510b6fba64394487e862079cd72af, type: 3}
   pickupWeaponAudio: {fileID: 0}
