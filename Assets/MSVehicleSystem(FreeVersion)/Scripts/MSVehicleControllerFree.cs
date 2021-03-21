@@ -8,6 +8,7 @@ using UnityEngine.UI;
 
 /// <summary>
 /// <param name="enableSkidMarksOnStart"> bool to enable skidmarks. was manually changed to false on awake </param>
+/// skiddingIsTrue also
 /// </summary>
 #region wheelClass
 [Serializable]
@@ -362,7 +363,7 @@ public class MSVehicleControllerFree : MonoBehaviour {
 	float maxSlipTemp;
 	bool forwardTempSKid;
 	bool forwardHandBrakeSKid;
-	bool skiddingIsTrue;
+	bool skiddingIsTrue = false;
 	int wheelsInOtherGround;
 	int maxWheels;
 
@@ -593,7 +594,7 @@ public class MSVehicleControllerFree : MonoBehaviour {
 		}
 
 		ms_Rigidbody = GetComponent <Rigidbody> ();
-		ms_Rigidbody.useGravity = true;
+		//ms_Rigidbody.useGravity = true;
 		ms_Rigidbody.mass = _vehicleSettings.vehicleMass;
 		ms_Rigidbody.drag = 0.0f;
 		ms_Rigidbody.angularDrag = 0.05f;
@@ -1455,7 +1456,7 @@ public class MSVehicleControllerFree : MonoBehaviour {
 		}
 		//
 		if (forwardTempSKid || (maxSlipTemp > (1 / _skidMarks.sensibility))) {
-			skiddingIsTrue = true;
+			skiddingIsTrue = false; //changed manually
 		} else {
 			skiddingIsTrue = false;
 		}

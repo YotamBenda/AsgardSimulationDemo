@@ -37,6 +37,10 @@ public class ControlsFree {
 	public bool enable_pause_Input = true;
 	[Tooltip("The key that must be pressed to pause the game.")]
 	public KeyCode pause = KeyCode.P;
+
+	[Space(10)]
+	[Tooltip("The key to activate switching Vehicle / Drone.")]
+	public KeyCode switchVehicle = KeyCode.G;
 }
 
 public class MSSceneControllerFree : MonoBehaviour {
@@ -117,6 +121,7 @@ public class MSSceneControllerFree : MonoBehaviour {
 	bool error;
 	bool enterAndExitBool;
 	string sceneName;
+	bool inDrone = false;
 
 	MSVehicleControllerFree vehicleCode;
 	MSVehicleControllerFree controllerTemp;
@@ -298,8 +303,12 @@ public class MSSceneControllerFree : MonoBehaviour {
 
 			if (Input.GetKeyDown (controls.reloadScene) && controls.enable_reloadScene_Input) {
 				gameEvent.FireEvent("MatchRestarted");
-
 			}
+
+            if (Input.GetKeyDown(controls.switchVehicle))
+            {
+				SwitchVehicles();
+            }
 
 			if (Input.GetKeyDown (controls.pause) && controls.enable_pause_Input) {
 				pause = !pause;
@@ -467,6 +476,18 @@ public class MSSceneControllerFree : MonoBehaviour {
 			}
 		}
 	}
+
+	public void SwitchVehicles()
+    {
+        if (!inDrone)
+        {
+			NextVehicle();
+        }
+        else
+        {
+			PreviousVehicle();
+        }
+    }
 
 	IEnumerator WaitToInteract(){
 		yield return new WaitForSeconds (0.7f);
