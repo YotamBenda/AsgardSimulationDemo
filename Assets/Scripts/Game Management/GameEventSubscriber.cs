@@ -10,27 +10,39 @@ using UnityEngine.Events;
 /// </summary>
 public class GameEventSubscriber : MonoBehaviour
 {
-    public UnityEvent OnGameStarted;
-    public UnityEvent OnGameEnded;
+    [SerializeField] GameEvent gameEvent;
+
+    public UnityEvent OnMatchStarted;
+    public UnityEvent OnMatchEnded;
     public UnityEvent OnEnemyKilled;
 
     public void OnEventFired(string eventName)
     {
         StartCoroutine(eventName);
     }
-    public IEnumerator GameStart()
+    public IEnumerator MatchStart()
     {
-        OnGameStarted?.Invoke();
+        OnMatchStarted?.Invoke();
         yield return null;
     }
-    public IEnumerator GameEnded()
+    public IEnumerator MatchEnded()
     {
-        OnGameEnded?.Invoke();
+        OnMatchEnded?.Invoke();
         yield return null;
     }
     public IEnumerator EnemyKilled()
     {
         OnEnemyKilled?.Invoke();
         yield return null;
+    }
+
+    private void OnEnable()
+    {
+        gameEvent += this;
+    }
+
+    private void OnDisable()
+    {
+        gameEvent -= this;
     }
 }

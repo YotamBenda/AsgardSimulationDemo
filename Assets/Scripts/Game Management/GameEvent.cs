@@ -18,4 +18,15 @@ public class GameEvent : ScriptableObject
             subscribers[i].OnEventFired(eventName);
         }
     }
+    public static GameEvent operator +(GameEvent evt, GameEventSubscriber sub)
+    {
+        evt.subscribers.Add(sub);
+        return evt;
+    }
+
+    public static GameEvent operator -(GameEvent evt, GameEventSubscriber sub)
+    {
+        evt.subscribers.Remove(sub);
+        return evt;
+    }
 }

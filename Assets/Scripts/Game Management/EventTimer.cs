@@ -6,6 +6,7 @@ using UnityEngine.Events;
 public class EventTimer : GenericSingleton<EventTimer>
 {
     public UnityEvent TriggeredEvent;
+    [SerializeField] TimerDataSO timerDataSO;
     public bool IsRunning
     {
         get;
@@ -69,6 +70,7 @@ public class EventTimer : GenericSingleton<EventTimer>
     void DecreaseTimer()
     {
         TimeToInvoke = Mathf.Max(TimeToInvoke -= _speed * Time.deltaTime, 0f);
+        timerDataSO.Timer = TimeToInvoke;
     }
 
     public void SuspendTimer()

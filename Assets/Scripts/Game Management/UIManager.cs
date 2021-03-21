@@ -9,42 +9,52 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
     [Header("Scriptable Objects")]
-    [SerializeField] private GameEvent _gameEvent;
-    [SerializeField] private TimerDataSO _timerData;
+    [SerializeField] private GameEvent gameEvent;
+    [SerializeField] private TimerDataSO timerData;
 
     [Header("UI Menus and Attributes")]
-    [SerializeField] private GameObject _gameEndMenu;
-    [SerializeField] private GameObject _gamePauseMenu;
-    [SerializeField] private Image[] _playersImageUI;
-    [SerializeField] private Image _background;
-    [SerializeField] private Text _timerText;
-    [SerializeField] private Text _winnerText;
+    [SerializeField] private GameObject gameEndMenu;
+    [SerializeField] private GameObject gamePauseMenu;
+    [SerializeField] private Text timerText;
+    [SerializeField] private Text scoreText;
+
+
+    private void Start()
+    {
+        SetScore();
+    }
 
     private void Update()
     {
-        _timerText.text = _timerData.Timer.ToString("F0");
+        timerText.text = timerData.Timer.ToString("F0");
     }
 
     public void EndGame()
     {
-        _gameEndMenu.SetActive(true);
+        //gameEndMenu.SetActive(true);
+        Debug.Log("Game ended go to sleep");
     }
 
     public void RestartGame()
     {
-        _gameEndMenu.SetActive(false);
-        _gameEvent.FireEvent("GameStarted");
+        gameEndMenu.SetActive(false);
+        gameEvent.FireEvent("GameStarted");
     }
 
     public void PauseGame()
     {
-        _gamePauseMenu.SetActive(true);
-        _gameEvent.FireEvent("PauseGame");
+        gamePauseMenu.SetActive(true);
+        gameEvent.FireEvent("PauseGame");
     }
 
     public void ContinueGame()
     {
-        _gamePauseMenu.SetActive(false);
-        _gameEvent.FireEvent("ContinueGame");
+        gamePauseMenu.SetActive(false);
+        gameEvent.FireEvent("ContinueGame");
+    }
+
+    public void SetScore()
+    {
+        scoreText.text = GameplayManager.Instance.Score.ToString();
     }
 }
