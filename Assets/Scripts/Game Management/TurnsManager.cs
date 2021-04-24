@@ -16,6 +16,7 @@ public class TurnsManager : MonoBehaviour
     public void StartNewTurn()
     {
         eventTimer.TimeEvent(timeForTurn, TurnEnded);
+        GameEventSubscriber.Instance.OnTestEvent += NextTurnAfterAttack;
     }
 
     public void NextTurnAfterAttack()

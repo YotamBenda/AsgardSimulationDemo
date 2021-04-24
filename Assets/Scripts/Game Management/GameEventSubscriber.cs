@@ -8,15 +8,22 @@ using UnityEngine.Events;
 /// All events are exposed to the inspector, assigning through it which function to activate for each event fired.
 /// Firing events from GameEvent class, using the Enums names in this class.
 /// </summary>
-public class GameEventSubscriber : MonoBehaviour
+public class GameEventSubscriber : GenericSingleton<GameEventSubscriber>
 {
     [SerializeField] GameEvent gameEvent;
 
+    public delegate void TestEvent();
+    public event TestEvent OnTestEvent;
     public UnityEvent OnMatchStarted;
     public UnityEvent OnMatchEnded;
     public UnityEvent OnMatchRestarted;
     public UnityEvent OnEnemyKilled;
 
+
+    public void InvokeTestEvent()
+    {
+        OnTestEvent?.Invoke();
+    }
     public void OnEventFired(string eventName)
     {
         StartCoroutine(eventName);
